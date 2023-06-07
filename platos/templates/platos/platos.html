@@ -1,0 +1,14 @@
+{% extends "platos/base_generic.html" %}
+
+
+{% block content %}
+<h1>Página Platos</h1>
+
+{% for plato in data %}
+
+         <p> {{plato.nombre}} precio S/. {{plato.precio}}</p>
+
+
+{% endfor %}
+
+{% endblock %}
